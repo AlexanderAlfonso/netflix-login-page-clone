@@ -52,9 +52,18 @@ h1 {
    background-color: #e50914; 
 }
 
+.form-check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
 .form-check-label {
-    margin-right: 150px;
     color: #b3b3b3;
+    flex-grow: 2;
 }
 
 .needHelp {
@@ -79,23 +88,9 @@ h1 {
     text-decoration: underline;
 } 
 
-@media (max-width: 575.98px) {
-    .form-check-label {
-        margin-right: 30px;
-    }
-}
-
-@media (max-width: 376px) {
-    .form-check-label {
-        margin-right: 16px;
-    }
-
+@media (max-width: 450px) {
     .container-fluid .logo img {
-        max-width: 150px;
-        min-height: 90px;
-        margin-left: 100px;
-        margin-top: -5px;
-        filter: brightness(90%);
+        display: none;
     }
 }
 
